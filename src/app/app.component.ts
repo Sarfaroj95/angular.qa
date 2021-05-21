@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  helloWorld() {
+    alert('Hello world!');
+}
 }

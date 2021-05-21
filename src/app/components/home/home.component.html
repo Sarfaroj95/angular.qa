@@ -1,0 +1,37 @@
+<section class="py-3 body-bg">
+  <div class="d-flex justify-content-center">
+    <div class="col-lg-8 col-sm-12">
+      <h3 class="py-2">Question & Answer Section</h3>
+      <div id="accordion">
+        <dx-accordion
+          #accordion
+          [dataSource]="companies"
+          [collapsible]="false"
+          [multiple]="true"
+          [animationDuration]="300"
+          [selectedItems]="[companies[0]]"
+        >
+          <div *dxTemplate="let company of 'title'">
+            <h4>{{ company.Question }}</h4>
+          </div>
+          <div *dxTemplate="let company of 'item'">
+            <div innerHtml="{{ company.Answer }}">
+              <!-- 
+              <p>
+                <span>{{ company.Answer }}</span>
+              </p> -->
+            </div>
+            <div>
+              <p *ngIf="company?.Website">
+                Website:
+                <a href="{{ company.Website }}" target="_blank">
+                  {{ company.Website }}
+                </a>
+              </p>
+            </div>
+          </div>
+        </dx-accordion>
+      </div>
+    </div>
+  </div>
+</section>
