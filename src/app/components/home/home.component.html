@@ -1,18 +1,20 @@
-<section class="py-3 body-bg">
+<section class="py-4 body-bg">
   <div class="d-flex justify-content-center">
     <div class="col-lg-8 col-sm-12">
-      <h3 class="py-2">Question & Answer Section</h3>
+      <h3 class="pb-3">
+        <span class="text-danger">&#9830;</span> Question & Answer
+      </h3>
       <div id="accordion">
         <dx-accordion
           #accordion
-          [dataSource]="companies"
+          [dataSource]="questionAnswer"
           [collapsible]="false"
           [multiple]="true"
           [animationDuration]="300"
-          [selectedItems]="[companies[0]]"
+          [selectedItems]="[questionAnswer[0]]"
         >
           <div *dxTemplate="let company of 'title'">
-            <h4>{{ company.Question }}</h4>
+            <h5>{{ company.ID }} | {{ company.Question }}</h5>
           </div>
           <div *dxTemplate="let company of 'item'">
             <div innerHtml="{{ company.Answer }}">
@@ -24,14 +26,13 @@
             <div>
               <p *ngIf="company?.Website">
                 Website:
-                <a href="{{ company.Website }}" target="_blank">
-                  {{ company.Website }}
-                </a>
+                <a href="{{ company.Website }}" target="_blank">Click me </a>
               </p>
             </div>
           </div>
         </dx-accordion>
       </div>
+      <div></div>
     </div>
   </div>
 </section>

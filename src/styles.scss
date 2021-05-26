@@ -28,5 +28,11 @@ body {
   width: 70%;
 }
 .body-bg {
-  background-color: #f2f2f2;
+  background-color: #fcd7dd;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 30vh;
+  }
 }

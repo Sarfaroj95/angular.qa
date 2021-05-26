@@ -1,11 +1,10 @@
-import { HeaderModule } from './utility/header/header.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,enableProdMode } from '@angular/core';
 import { DxButtonModule } from 'devextreme-angular';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { LayoutModule } from './layout/layout/layout.module';
+import { HeaderModule } from './utility/header/header.module';
+import { FooterModule } from './utility/footer/footer.module';
 
 if(!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -18,8 +17,8 @@ if(!/localhost/.test(document.location.host)) {
     BrowserModule,
     AppRoutingModule,
     DxButtonModule,
-    // LayoutModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,10 +9,10 @@ import { AngularQaServiceService } from './../../service/angular-qa-service.serv
 })
 export class HomeComponent implements OnInit {
 
-  companies: any[];
+  questionAnswer: any[];
 
   constructor(service: AngularQaServiceService) {
-      this.companies = service.getCompanies();
+      this.questionAnswer = service.getCompanies();
   }
 
   ngOnInit() {
