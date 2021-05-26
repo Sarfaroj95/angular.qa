@@ -9,7 +9,7 @@ body {
 
 .header {
   contain: "";
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   color: #fff;
   background: linear-gradient(45deg, #ff0021, #877ff3);
@@ -28,11 +28,11 @@ body {
   width: 70%;
 }
 .body-bg {
-  background-color: #fcd7dd;
+  background-color: #fae3e7;
 }
 
 @media only screen and (max-width: 600px) {
   .header {
-    height: 30vh;
+    height: 20vh;
   }
 }

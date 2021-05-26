@@ -28,7 +28,7 @@ let companies: any = [
   {
     "ID": 1,
     "Question": "What is angular ?",
-    "Answer": "<p>Angular is a TypeScript based <b>open source web application framework</b>, developed and maintained by <b>Google</b>. Easy and powerful way of building front end web based applications. Angular integrates a range of features like declarative templates dependency injection end-to-end tooling.</p>",
+    "Answer": "<p>Angular is a TypeScript based <b>open source single page web application framework</b>, developed and maintained by <b>Google</b>. Easy and powerful way of building front end web based applications. Angular integrates a range of features like declarative templates dependency injection end-to-end tooling.</p>",
     "Website": "https://angular.io/"
 },
 {
