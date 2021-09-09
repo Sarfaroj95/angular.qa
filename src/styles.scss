@@ -9,11 +9,12 @@ body {
 
 .header {
   contain: "";
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   color: #fff;
-  background: linear-gradient(45deg, #ff0021, #877ff3);
-  // border-radius: 0 0 20% 20% / 0 0 100% 100%;
+  background: linear-gradient(rgba(252, 160, 160, 0.6),rgba(0,0,0,0.6)), url('./assets/appbg2.jpg');
+  background-repeat: no-repeat;
+   background-size: 100% 100%;
 }
 // .header:after{
 //     content: '';
@@ -30,9 +31,17 @@ body {
 .body-bg {
   background-color: #fae3e7;
 }
+.sl_no{
+  font-size: 26px;
+  color: rgb(197, 194, 194);
+  font-weight: 500;
+}
+.question_q{
+  margin-top: -10px;
+}
 
-@media only screen and (max-width: 600px) {
+@media(min-width:320px) and (max-width:640px) {
   .header {
-    height: 20vh;
+    height: 32vh;
   }
 }

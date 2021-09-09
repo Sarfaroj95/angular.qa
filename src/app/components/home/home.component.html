@@ -14,14 +14,10 @@
           [selectedItems]="[questionAnswer[0]]"
         >
           <div *dxTemplate="let company of 'title'">
-            <h5>{{ company.ID }} | {{ company.Question }}</h5>
+            <p class="question"><span class="sl_no">{{ company.ID }}. </span>  <span class="question_q">{{ company.Question }}</span></p>
           </div>
           <div *dxTemplate="let company of 'item'">
             <div innerHtml="{{ company.Answer }}">
-              <!-- 
-              <p>
-                <span>{{ company.Answer }}</span>
-              </p> -->
             </div>
             <div>
               <p *ngIf="company?.Website">
@@ -32,7 +28,29 @@
           </div>
         </dx-accordion>
       </div>
-      <div></div>
+      <!-- <div class="pb-3">
+        <div class="user-question-section">
+          <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 pt-1">
+                <input type="text" class="form-control" placeholder="Email"
+                name="email" [(ngModel)]="formData.email" #email="ngModel" ngModel required>
+                <p class="text-white" *ngIf="email.hasError('required')">It is requered</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 pt-1">
+                <input type="text" class="form-control pt-sm-2" 
+                placeholder="Question"
+                name="question" [(ngModel)]="formData.question"
+                >
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 pt-1">
+                <button type="submit" class="btn btn-danger btn-block">Submit</button>
+              </div>
+            </div>
+            <p class="mt-3">If you have real time interview question. Please provide for next interview.</p>
+          </form>
+        </div>
+      </div> -->
     </div>
   </div>
 </section>
