@@ -16,13 +16,13 @@
           <div *dxTemplate="let company of 'title'">
             <p class="question"><span class="sl_no">{{ company.ID }}. </span>  <span class="question_q">{{ company.Question }}</span></p>
           </div>
-          <div *dxTemplate="let company of 'item'">
-            <div innerHtml="{{ company.Answer }}">
+          <div class="answer-section" *dxTemplate="let company of 'item'">
+            <div  innerHtml="{{ company?.Answer }}">
             </div>
             <div>
               <p *ngIf="company?.Website">
                 Website:
-                <a href="{{ company.Website }}" target="_blank">Click me </a>
+                <a href="{{ company?.Website }}" target="_blank">Click me </a>
               </p>
             </div>
           </div>

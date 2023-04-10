@@ -1,0 +1,11 @@
+.footer-position{
+    padding: 24px 20px 10px 40px;
+}
+
+@media(min-width:320px) and (max-width:640px) {
+   
+    .footer-position{
+        padding: 18px 0px 8px 0px;
+        text-align: center;
+    }
+}

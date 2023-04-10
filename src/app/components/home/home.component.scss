@@ -8,3 +8,13 @@
     // box-shadow: 0 0 9px rgba(0, 0, 0, 0.24);
     background: linear-gradient(90deg, rgba(253,29,29,1) 15%, rgb(238, 184, 184) 100%);;
 }
+.answer-section{
+    padding: 0px 0px 0px 36px;
+}
+
+@media(min-width:320px) and (max-width:640px) {
+   
+    .answer-section{
+        padding: 10px;
+    }
+}

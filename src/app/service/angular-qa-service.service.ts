@@ -69,72 +69,84 @@ let companies: any = [
   },
   {
     "ID": 8,
+    "Question": "What is Interceptor in Anguklar?",
+    "Answer": "<p>Interceptor is a medium in angular. This is connect to <b>Back-end</b> to <b>Front-end</b> Application. When any request is made that time interceptor can hanlde it.   </p>",
+    "Website": ""
+  },
+  {
+    "ID": 9,
+    "Question": "What is Pipe in Angular?",
+    "Answer": "<p>Pipes are simply a function that can directly apply on any Expression or value in Tamplate to Transform into some others value. <ul><li>Example</li><li>DatePipe - date - {{valueDate | date: 'dd/MM/yyyy'}}</li> <li>UpperCase - uppercase</li><li>LowerCase - lowercase</li><li>CurrencyPipe - currency</li><li>PercentPipe - percent</li><li><b>Custom Pipe</b> - We can create custom pipe also as per diplay data</li></li></ul</p>",
+    "Website": ""
+  },
+  {
+    "ID": 10,
+    "Question": "What is Data Buinding in Angular?",
+    "Answer": "<p>Data binding is the core concept of Angular 8 and used to define the communication between a component and the tamplate </br><ul><li><b>Two Type Data Buinding</b></li><li>One way Data Buinding - {{ value }}</li><li>Two way Data Buinding - Using [(ngModel)]</li><ul/></p>",
+    "Website": ""
+  },
+  {
+    "ID": 11,
     "Question": "How to data pass child to parent - parent to child components ?",
     "Answer": "<p>In the above parent component, we are passing “data” property to the following child component: <br/> Follow No 13 Question below link </p>",
     "Website": "https://www.interviewbit.com/angular-interview-questions/"
   },
   {
-    "ID": 9,
+    "ID": 12,
     "Question": "What is lazy loading ?",
     "Answer": "<p><b>Lazy loading</b> is a technique in Angular that allows you to load components <b>asynchronously</b> when a specific route is activated. It improves the speed of application load time. </p>",
     "Website": ""
   },
   {
-    "ID": 10,
+    "ID": 13,
     "Question": "Life cycle hooks ?",
-    "Answer": "<p>An Angular component has a discrete life-cycle <br/> <ul><li>constructor</li><li>ngOnChanges</li><li>ngOnInit</li><li>ngDoCheck</li><li>ngOnDestroy</li></ul></p>",
+    "Answer": "<p>An Angular component has a discrete life-cycle <br/> <ul><li>ngOnChanges - Called before ngOnInit function when one or more data bounds what  time properties changes</li><li>ngOnInit - Called once when rednder this page after ngOnChanges function. </li><li>ngDoCheck - Called immediatly after ngOnChanges on every changes detection run and immediatly After ngOnInit function.</li><li>ngAfterContentInit</li><li>ngAfterContentchecked</li><li>ngAfterViewInit</li><li>ngAfterViewChecked</li><li>ngOnDestroy</li></ul></p>",
     "Website": ""
   },
   {
-    "ID": 11,
+    "ID": 14,
     "Question": "What are templates in Angular ?",
     "Answer": "<p>Templates in Angular are written Html that contains Angular specific elements and attributes; these templates are combined with information coming from the module.</p>",
     "Website": ""
   },
   {
-    "ID": 12,
+    "ID": 15,
     "Question": "What are Angular expressions ?",
     "Answer": "<p>Angular expressions are code snippets that are usually pleased in binding such as <b>{{}}</b> expressions similar to JavaScript. This expression is used to binding data to Html in application.</p>",
     "Website": ""
   },
   {
-    "ID": 13,
-    "Question": "What is data binding ?",
-    "Answer": "<p>In Angular, data binding is one of the most powerful and important features that allow you to define the communication between the component and <b>DOM(Document Object Model)</b>.</p>",
-    "Website": ""
-  },
-  {
-    "ID": 14,
+    "ID": 16,
     "Question": "What is AOT ?",
     "Answer": "<p>AOT stands for Angular <b>Ahead-of-Time</b> compiler. It is used for pre-compiling the application components and along with their templates during the build process. Angular applications which are compiled with AOT have a smaller launching time.</p>",
     "Website": ""
   },
   {
-    "ID": 15,
+    "ID": 17,
     "Question": "What are events in Angular ?",
     "Answer": "<p>Events in Angular are specific directives that help in customizing the behavior of various DOM events<br/><ul><li>ng-click</li><li>ng-copy</li><li>ng-cut</li><li>ng-dblclick</li><li>ng-keydown</li><li>ng-keypress</li><li>ng-keyup</li><li>ng-mousedown</li><li>ng-mouseenter</li><li>ng-mouseleave</li><li>ng-mousemove</li><li>ng-mouseover</li><li>ng-mouseup</li><li>ng-blur</li></ul></p>",
     "Website": ""
   },
   {
-    "ID": 16,
+    "ID": 18,
     "Question": "What is HttpClient ?",
     "Answer": "<p><b>HttpClient</b> is introduced in Angular 6 and it will help us fetch external data, post to it, etc. We need to import the http module to make use of the http service.</p>",
     "Website": ""
   },
   {
-    "ID": 17,
+    "ID": 19,
     "Question": "Differences between Promises and observables ?",
     "Answer": "<p>Differences are: <ul><li><b>Promise</b> emits a single value</li><li><b>Observable</b> emits multiple values over a period of a time</li><li>Promise not lazy</li><li>Observable are lazy an observable is not called until unsubscribe to the Observable</li><li>Promise can’t be cancelled</li><li>Observable can be cancelled by using unsubscribe() method</li><li>Observable provide operators like: <ul><li>Map, forEach, filter, reduce, retry, retryWhen etc</li></ul></li></ul></p>",
     "Website": ""
   },
   {
-    "ID": 18,
+    "ID": 20,
     "Question": "Differentiate between Angular and AngularJS ?",
     "Answer": "<p>Differences are: <ul><li><b>Angular Js</b> using JavaScript Based</li><li><b>Angular</b> using TypeScript Based</li><li>AngularJs is controller Architecture </li><li>Angular is components Architecture</li><li>AngularJs is not mobile supported</li><li>Angular is mobile supported</li><li>AngularJs not Have CLI (command-line interfaces)</li><li>Angular have CLI (command-line interfaces)</li></ul></p>",
     "Website": ""
   },
   {
-    "ID": 19,
+    "ID": 21,
     "Question": "Differentiate between One-Way and Two-Way ?",
     "Answer": "<p>Follow this link: </p>",
     "Website": "https://www.pluralsight.com/guides/one-and-two-way-data-binding-angular"
